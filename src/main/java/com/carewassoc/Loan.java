@@ -23,6 +23,7 @@ public class Loan {
 	public void setLoanPerson(Person loanPerson) {
 		this.loanPerson = loanPerson;
 	}
+	
 	public Book getLoanBook() {
 		return loanBook;
 	}
