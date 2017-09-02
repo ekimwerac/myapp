@@ -2,7 +2,8 @@ package com.carewassoc;
 
 import java.util.ArrayList;
 
-public abstract class Book {
+public class ReferenceBook extends Book {
+
 	private String id;
 	private String title;
 	private String author;
