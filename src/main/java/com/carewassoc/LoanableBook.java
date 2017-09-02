@@ -1,17 +1,18 @@
 package com.carewassoc;
 
-public class ReferenceBook extends Book {
+public class LoanableBook extends Book {
 
-	public ReferenceBook(String id, String title, String author, double price) {
+	public LoanableBook(String id, String title, String author, double price) {
 		super(id, title, author, price);
 		// TODO Auto-generated constructor stub
 	}
 
-	public ReferenceBook(String id, String title, String author) {
+	public LoanableBook(String id, String title, String author) {
 		super(id, title, author);
 		// TODO Auto-generated constructor stub
 	}
 	public boolean isLoanable() {
-		return false;
+		return true;
 	}
+
 }

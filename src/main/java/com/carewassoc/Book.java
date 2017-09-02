@@ -13,6 +13,8 @@ public abstract class Book {
 		return (ids.contains(id));
 	}
 
+	public abstract boolean isLoanable();
+
 	public Book(String id, String title, String author, double price) {
 
 		if (isDuplicated(id)) {
@@ -22,7 +24,7 @@ public abstract class Book {
 			this.id = id;
 			this.title = title;
 			this.author = author;
-			
+
 			this.price = price;
 			ids.add(id);
 		}
