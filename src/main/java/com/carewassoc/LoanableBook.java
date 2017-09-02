@@ -11,8 +11,14 @@ public class LoanableBook extends Book {
 		super(id, title, author);
 		// TODO Auto-generated constructor stub
 	}
+
 	public boolean isLoanable() {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return ("Book ID: " + id + ", " + "Book Title: " + title + ", " + "Book Author: " + author + ", "
+				+ "Book Price: " + price + "Loanable");
+	}
 }

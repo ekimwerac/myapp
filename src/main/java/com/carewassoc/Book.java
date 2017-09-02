@@ -3,10 +3,10 @@ package com.carewassoc;
 import java.util.ArrayList;
 
 public abstract class Book {
-	private String id;
-	private String title;
-	private String author;
-	private double price;
+	protected String id;
+	protected String title;
+	protected String author;
+	protected double price;
 	private static ArrayList<String> ids = new ArrayList<>();
 
 	private boolean isDuplicated(String id) {

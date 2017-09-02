@@ -14,4 +14,11 @@ public class ReferenceBook extends Book {
 	public boolean isLoanable() {
 		return false;
 	}
+	@Override
+	public String toString() {
+		return ("Book ID: " + id + ", " + "Book Title: " + title + ", " + "Book Author: " + author + ", "
+				+ "Book Price: " + price + "Reference");
+
+	}
+
 }
