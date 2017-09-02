@@ -13,6 +13,7 @@ public abstract class Book {
 		return (ids.contains(id));
 	}
 
+	
 	public abstract boolean isLoanable();
 
 	public Book(String id, String title, String author, double price) {
