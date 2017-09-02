@@ -5,6 +5,7 @@ public class Loan {
 	private Date loanDate;
 	private Person loanPerson;
 	private Book loanBook;
+	
 	public Loan(Date loanDate, Person loanPerson, Book loanBook) {
 		super();
 		this.loanDate = loanDate;

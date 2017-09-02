@@ -18,6 +18,7 @@ public class BookTest {
 	public void testAuthor() {
 		Book book1 = new Book("T2", "My Book", "Mike Carew", 20.00);
 		Book book2 = new Book("T2", "My Book", "Mike Carew", 20.00);
+		
 		assertEquals("Author not set correctly", book2.getAuthor(), "Mike Carew");		
 		assertEquals("Author not set correctly", book1.getAuthor(), "Mike Carew");
 	}

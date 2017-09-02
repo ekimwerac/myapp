@@ -17,6 +17,7 @@ public class LoanTest {
 		Book loanbook1=new Book("T1", "My Book", "My Title", 20.00);
 		Loan loan1 = new Loan(loandate1, loanPerson1, loanbook1 );
 		
+		
 		assertEquals("loan1 Person", loan1.getLoanperson().getFirstName(), "Mike");
 		
 		
