@@ -1,9 +1,13 @@
 package com.carewassoc;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Person {
 	private String firstName;
 	private String lastName;
 	private Membership membership;
+	private List<Book> books =new ArrayList<Book>();
 	
 	public Person(String firstName, String lastName, String membertype) {
 		super();
@@ -12,7 +16,17 @@ public class Person {
 		this.membership=MembershipFactory.getMembership(membertype);
 	}
 
-	public void borrow(Book) {
+	public void listBooks() {
+		Book tbook;
+		int i;
+		int size =books.size();
+		for (i=0; i<size; i++) {
+			tbook=books.get(i);
+			System.out.println(tbook);
+		}
+	}
+	public void borrow(Book book) {
+		books.add(book);
 		
 	}
 	public String getFirstName() {
