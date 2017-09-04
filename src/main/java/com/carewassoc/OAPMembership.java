@@ -13,4 +13,7 @@ public class OAPMembership extends Membership {
 		}
 		return oapmembership;
 	}
+	public String toString() {
+		return "OAP";
+	}
 }

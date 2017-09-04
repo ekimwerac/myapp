@@ -12,5 +12,8 @@ public class StandardMembership extends Membership {
 		}
 		return standardmembership;
 	}
+	public String toString() {
+		return "Standard";
+	}
 
 }

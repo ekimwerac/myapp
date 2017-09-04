@@ -13,5 +13,8 @@ public class StudentMembership extends Membership {
 		}
 		return studentmembership;
 	}
+	public String toString() {
+		return "Student";
+	}
 
 }
