@@ -1,22 +1,17 @@
 package com.carewassoc;
 
 public class StudentMembership extends Membership {
-	private StudentMembership instance;
-	//private static StudentMembership instance = new StudentMembership();
+	private static StudentMembership studentmembership=null;
 
-	private StudentMembership() {};
-	
-	public static Membership getInstance(){
-        if(instance == null){
-            instance = new StudentMembership();
-        }
-        return (StudentMembership) instance;
-    }
+	private StudentMembership() {
+	} // private for immutability
 
-	@Override
-	public Membership getinstance() {
-		// TODO Auto-generated method stub
-		return instance;
+
+	public static Membership getMembership() {
+		if (studentmembership == null) {
+			studentmembership = new StudentMembership();
+		}
+		return studentmembership;
 	}
-	
+
 }

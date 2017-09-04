@@ -1,16 +1,15 @@
 package com.carewassoc;
 
 public class MembershipFactory {
+	public static Membership getMembership(String membership) {
+		Membership m = null;
+		if ("Standard".equals(membership))
+			m = StandardMembership.getMembership();
+		else if ("Student".equals(membership))
+			m = StudentMembership.getMembership();
+		else if ("OAP".equals(membership))
+			m = OAPMembership.getMembership();
 
-  public static Membership getMembership(String criteria)
-  {
-    if ( criteria.equals("Standard") )
-      return StandardMembership.getInstance();
-    else if ( criteria.equals("Student") )
-      return StudentMembership.getInstance();
-    else if ( criteria.equals("OAP") )
-      return OAPMembership.getInstance();
-    
-    return null;
-  }
+		return m;
+	}
 }
